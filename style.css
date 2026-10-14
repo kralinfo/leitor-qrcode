@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+header p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.scanner-card,
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+#reader {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+button {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  border-radius: 9px;
+  padding: 13px 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.upload {
+  display: block;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#file-input {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#status {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 18px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+#result {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  min-height: 55px;
+}
+
+#result a {
+  color: #2563eb;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  padding: 12px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .scanner-card,
+  .result-card {
+    padding: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
